@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS", 
+        "target": "ES6",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "lib": [
+            "es2019",
+            "dom"
+        ],
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": "../",
+        "paths": {
+            "*": [
+                "node_modules/*",
+                "src/types/*",
+                "src/models/*",
+                "src/controllers/*",
+                "src/middlewares/*",
+                "src/routes/*",
+                "src/helpers/utils/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "src/seeders/*" 
+    ],
+    "ts-node": { "files": true},
+    "files": ["src/types.d.ts", "src/server.ts"]
+}
